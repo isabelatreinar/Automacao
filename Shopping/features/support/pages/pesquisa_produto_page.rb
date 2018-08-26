@@ -1,8 +1,10 @@
 require_relative 'sections'
 
+
 class PesquisaPage < SitePrism::Page
 
     section :topo, Navbar, '.header-nav'
+    
 
     element :btn_buscar, '.spr-search-button'
     element :input_buscar, '#buscaProduto'

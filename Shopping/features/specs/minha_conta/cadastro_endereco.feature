@@ -15,9 +15,6 @@ Cenario: Editar Endereço
       | rua         | Rua Sergipe    |
       | numero      | 200            |
       | complemento | 5º andar       |
-      | bairro      | Floresta       |
-      | estado      | Minas Gerais   |
-      | cidade      | BELO HORIZONTE |
       | referencia  | Perto da Praça |
     Então visualizo as informacoes do meu endereco padrao em minha conta
 

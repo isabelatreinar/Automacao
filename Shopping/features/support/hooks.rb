@@ -4,10 +4,22 @@ Before do
   @pesquisa = PesquisaPage.new
   @endereco = EnderecoPage.new
   @conta = ContaPage.new
-  @listagem = CompraPage.new
+  @compra = CompraPage.new
   @teste = TesteLoginPage.new
+  
+end
+=begin
+Before('@testeCadastroreset') do
+  visit 'https://marktasks.herokuapp.com/api/reset/flaviosm2003@hotmail.com?clean=full'
 end
 
+After('@testeCadastroLogout') do
+  @abrirMenu = 'a[href="/user_settings dropdown-toggle"]'
+  find(@abrirMenu).click
+  @sair = 'a[href="/logout"]'
+  find(@sair).click
+end
+=end
 Before('@auth') do
   @login.load
   @login.btn_fecha_popup.click

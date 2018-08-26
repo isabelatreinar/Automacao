@@ -16,7 +16,7 @@ ENV['HTTP_PROXY'] = ENV['http_proxy'] = nil
 
 Capybara.register_driver :selenium do |app|
   client = Selenium::WebDriver::Remote::Http::Default.new
-  client.read_timeout = 40
+  #client.read_timeout = 40
   caps = Selenium::WebDriver::Remote::Capabilities.new(accept_insecure_certs: true)
   Capybara::Selenium::Driver.new(app, :http_client => client,desired_capabilities: caps)
 end
@@ -28,7 +28,7 @@ CONFIG = YAML.load_file(File.dirname(__FILE__) + "/data/#{ENVIRONMENT_TYPE}.yml"
 
 #configurar capybara para usar com selenium
 Capybara.configure do |config|
-  config.default_driver = :selenium_chrome # essa configuração é para instanciar o browser com Firefox/Chrome, etc
+  config.default_driver = :selenium # essa configuração é para instanciar o browser com Firefox/Chrome, etc
   config.app_host = CONFIG['url_home']
 end
 #configuração de tempo de espera para achar elemento na tela

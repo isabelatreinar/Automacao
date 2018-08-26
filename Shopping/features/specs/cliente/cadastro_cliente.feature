@@ -13,7 +13,7 @@ Cenário: Cadastro simples
     
     E possuo os seguintes dados:
       | nome              | Luciana Oliveira             |
-      | cpf               | 923.766.846-50               |
+      | cpf               | 379.237.502-89               |
       | email             | isabela.goncalves@csu.com.br |
       | conf_email        | isabela.goncalves@csu.com.br |
       | senha             | 123456                       |
