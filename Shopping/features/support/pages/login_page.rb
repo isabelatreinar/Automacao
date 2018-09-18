@@ -21,7 +21,8 @@ class LoginPage < SitePrism::Page
   element :msg_sucesso_email,    '.toast-message'
 
   def logar(cpf, senha)
-    #wait_for_input_cpf
+    wait_for_btn_fecha_popup
+    btn_fecha_popup.click
     input_cpf.set cpf
     input_senha.set senha
     btn_entrar.click 

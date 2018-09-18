@@ -12,7 +12,7 @@ Cenário: Cadastro com sucesso
     
     Quando faco o cadastro com:
     |nome    | Flavio machado          |
-    |email  | flaviosm2003@hotmail.com|
+    |email   | flaviosm2003@hotmail.com|
     |senha   | 123456                  | 
     Então visualizo a pagina de tarefas
 

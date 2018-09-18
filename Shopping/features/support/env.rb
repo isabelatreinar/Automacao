@@ -28,11 +28,11 @@ CONFIG = YAML.load_file(File.dirname(__FILE__) + "/data/#{ENVIRONMENT_TYPE}.yml"
 
 #configurar capybara para usar com selenium
 Capybara.configure do |config|
-  config.default_driver = :selenium # essa configuração é para instanciar o browser com Firefox/Chrome, etc
+  config.default_driver = :selenium_chrome # essa configuração é para instanciar o browser com Firefox/Chrome, etc
   config.app_host = CONFIG['url_home']
 end
 #configuração de tempo de espera para achar elemento na tela
-Capybara.default_max_wait_time = 40
+Capybara.default_max_wait_time = 50
 #@wait = Selenium::WebDriver::Wait.new(:timeout => 45)
 
 

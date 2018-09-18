@@ -13,7 +13,7 @@ Cenário: Cadastro simples
     
     E possuo os seguintes dados:
       | nome              | Luciana Oliveira             |
-      | cpf               | 379.237.502-89               |
+      | cpf               | 823.636.017-26               |
       | email             | isabela.goncalves@csu.com.br |
       | conf_email        | isabela.goncalves@csu.com.br |
       | senha             | 123456                       |
@@ -109,7 +109,7 @@ Esquema do Cenario: Validacoes em Cadastro
       | Ana Carla | 831.104.380-97 | isabela@csu.com    | isabela@csu.com.br | 123   | Minas Gerais | BETIM  | FEMININO | A confirmação de e-mail não confere com o e-mail informado. |  
       | Ana Carla | 831.104.380-97 | isabela@csu.com.br | isabela@csu.com.br |       | Minas Gerais | BETIM  | FEMININO | É necessário informar a senha                               |  
       | Ana Carla | 831.104.380-97 | isabela@csu.com.br | isabela@csu.com.br | 123   | Selecione    |        | FEMININO | O Estado deve ser preenchido.                               |
-      | Ana Carla | 831.104.380-97 | isabela@csu.com.br | isabela@csu.com.br | 123   | Minas Gerais |        | FEMININO | A Cidade deve ser preenchida.                               |      
+      
 
 
     

@@ -21,6 +21,7 @@ end
 Quando('tento cadastrar um endereco com campos obrigatorios vazios') do
   @endereco.menu_lateral.btn_meus_enderecos.click
   @endereco.minha_conta.btn_adicionar.click
+  sleep(10)
   @endereco.minha_conta.btn_salvar.click
 end
 

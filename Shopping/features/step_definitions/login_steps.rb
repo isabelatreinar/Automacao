@@ -1,13 +1,13 @@
 
 Dado('que acessei a pagina de login') do
-  visit('/Conta/Login')
+  visit '/Conta/Login'
   #@login.btn_fecha_popup_alternativo.click
-  @login.btn_fecha_popup.click
+  #@login.btn_fecha_popup.click
 end
 
 Quando('faço login com {string} e {string}') do |cpf, senha|
- 
   @login.logar(cpf, senha)
+  byebug
 end
 
 Então('sou autenticado com sucesso') do

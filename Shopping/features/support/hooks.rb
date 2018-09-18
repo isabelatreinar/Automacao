@@ -22,7 +22,6 @@ end
 =end
 Before('@auth') do
   @login.load
-  @login.btn_fecha_popup.click
   @login.logar('683.584.982-76', '123456')
 end
 

@@ -32,11 +32,11 @@ class CompraPage < SitePrism::Page
       btn_concluir_compra.click
       choose("0")#clica no radio button, na opcao '0' (zero) de confirmacao de endereco na pagina de checkout  para habilitar o preenchimento das opcoes de pagamento
       choose("0")           
-      wait_for_btn_nao_utilizar_cartao
-
+      
     end
 
     def checkout(inf)
+      wait_for_btn_nao_utilizar_cartao
       btn_nao_utilizar_cartao.click
       btn_nao_utilizar_cartao.click #inseri o comnado para clicar no botão 2x pois uma não clica!
       wait_for_input_titular
@@ -50,6 +50,6 @@ class CompraPage < SitePrism::Page
       btn_parcelamento.click
       wait_for_combo_parcelamento
       combo_parcelamento.find('option', text: inf['Parcelas']).select_option
-      btn_pagar.click
+      #btn_pagar.click
     end
 end

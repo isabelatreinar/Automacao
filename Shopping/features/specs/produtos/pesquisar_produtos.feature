@@ -8,5 +8,5 @@ Funcionalidade: Pesquisa
 @pesquisa @auth 
 Cenario: Pesquisa de Produtos
     Dado que estou logado no site
-    Quando realizo a pesquisa do produto "FERRO DE PASSAR 1500W"
+    Quando realizo a pesquisa do produto "FERRO DE PASSAR 1600W"
     Então visualizo as informacoes "FERRO DE PASSAR 1500W DURATHON HAMILTON BEACH -127V" na pagina
